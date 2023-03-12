@@ -510,7 +510,7 @@ MonoBehaviour:
   hand: {fileID: 722837686}
   col: {fileID: 114963115}
   flashLight: {fileID: 1002704433532701}
-  speedMov: 5
+  speedMov: 1
   speedRot: 2
 --- !u!54 &114963120
 Rigidbody:
