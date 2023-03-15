@@ -7,8 +7,6 @@ public class PlayerInteraction : MonoBehaviour
     public Inventory inventory;
     public Inventory equipment;
 
-    //public MouseItem mouseItem = new MouseItem();
-
     public void OnTriggerEnter(Collider other)
     {
         var groundItem = other.GetComponent<GroundItem>();
@@ -22,23 +20,23 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("s"))
-        {
-            inventory.SaveItems();
-            equipment.SaveItems();
-        }
-        if (Input.GetKeyDown("l"))
-        {
-            inventory.LoadItems();
-            equipment.LoadItems();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown("s"))
+    //    {
+    //        inventory.SaveItems();
+    //        equipment.SaveItems();
+    //    }
+    //    if (Input.GetKeyDown("l"))
+    //    {
+    //        inventory.LoadItems();
+    //        equipment.LoadItems();
+    //    }
+    //}
 
-    private void OnApplicationQuit()
-    {
-        inventory.Container.Clear();
-        equipment.Container.Clear();
-    }
+    //private void OnApplicationQuit()
+    //{
+    //    inventory.Container.Clear();
+    //    equipment.Container.Clear();
+    //}
 }
